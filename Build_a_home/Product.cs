@@ -2,12 +2,15 @@ namespace Build_a_home;
 
 public abstract class Product
 {
-    private string _name;
-    private float _price;
+    
+    protected string _name;
+    protected string ProductName;
+    protected float _price;
 
-    protected Product(string name, float price)
+    protected Product(string name, string productName, float price)
     {
         _name = name;
+        ProductName = productName;
         _price = price;
     }
 
